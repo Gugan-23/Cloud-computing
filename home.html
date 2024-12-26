@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.home {
+    background-color: lightblue;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home button {
+    background-color: green;
+    height: 40px;
+    width: 120px;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    height: 500px;
+    width: 650px;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: lightblue;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+    <main>
+        <title>Home</title>
+        <div class="home">
+            <button id="hi" type="button" onclick="go()">Profile</button>
+            <button id="hi2" type="button" onclick="go()">Home</button>
+            <button id="hi3" type="button" onclick="go()">Shop now</button>
+            <button id="hi4" type="button" onclick="go()">Contact us</button>
+            <button id="hi5" type="button" onclick="go()">Chat with expert</button>
+            <button id="hi6" type="button" onclick="lo()">Location</button>
+            <button id="hi7" type="button" onclick="ab()">About us</button>
+        </div>
+
+        <video controls>
+            <source src="E:/Sem-5/Full-stack/Full-Stack-developement-project/intro.mp4" id="io" type="video/mp4">
+        </video>
+
+        <!-- Adding the iframe -->
+        <iframe src="https://udservices.org/which-term-use-people-with-disabilities/" title="Embedded Page"></iframe>
+
+        <footer>
+            <p>&copy;2024 My Website. All rights reserved</p>
+            <a href="https://privacy.microsoft.com/en-US/">#Privacy</a>
+            <a href="https://privacy.microsoft.com/en-US/">#Terms</a>
+        </footer>
+    </main>
+
+    <script>
+        function go() {
+            window.location.href = "info.html";
+        }
+        function ab() {
+            window.location.href = "frameset.html";
+        }
+        function lo() {
+            window.location.href = "geo.html";
+        }
+    </script>
+</body>
+</html>
